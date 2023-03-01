@@ -1,10 +1,10 @@
 import type { SocialObjects } from "./types";
 
 export const SITE = {
-  website: "https://astro-paper.pages.dev/",
-  author: "Sat Naing",
+  website: "https://ryanf.dev/",
+  author: "Ryan",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  title: "ryanf.dev",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
@@ -20,19 +20,13 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://ryanf.dev",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
   {
-    name: "Facebook",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on Facebook`,
-    active: true,
-  },
-  {
     name: "Instagram",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://instagram.com/cloud_architect",
     linkTitle: `${SITE.title} on Instagram`,
     active: true,
   },
@@ -44,25 +38,25 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:ryanef39@gmail.com",
     linkTitle: `Send an email to ${SITE.title}`,
     active: false,
   },
   {
     name: "Twitter",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://twitter.com/ryanf_dev",
     linkTitle: `${SITE.title} on Twitter`,
     active: false,
   },
   {
     name: "Twitch",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://twitch.tv/ryanfdev",
     linkTitle: `${SITE.title} on Twitch`,
     active: false,
   },
   {
     name: "YouTube",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "#",
     linkTitle: `${SITE.title} on YouTube`,
     active: false,
   },
