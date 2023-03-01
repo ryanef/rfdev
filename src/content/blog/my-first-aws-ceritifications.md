@@ -1,7 +1,7 @@
 ---
 title: "My First 3 AWS Certifications in AWS"
 description: "Passing the 3 associate AWS certifications"
-pubDatetime: 2022-09-21T05:17:19Z
+pubDatetime: 2023-02-21T1:17:19Z
 
 ---
 
