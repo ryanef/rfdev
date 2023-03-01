@@ -9,7 +9,7 @@ If you're interested in starting a blog similar to the one you're on right now t
 
 ### What we're doing:
 
-Generating a static site using the Astro Javascript framework and deploying it to AWS. It will be hosted in an S3 bucket and served by CloudFront. You can use the CloudFormation template I've prepared to create the S3 bucket and CloudFront distribution or do it yourself. Afterwards, use Route 53 for the domain name and ACM to generate an SSL certificate.
+Generating a static site using the Astro JS framework and deploying it to AWS. It will be hosted in an S3 bucket and served by CloudFront. You can use the CloudFormation template I've prepared to create the S3 bucket and CloudFront distribution or do it yourself. Afterwards, use Route 53 for the domain name and ACM to generate an SSL certificate.
 
 ### Getting Started:
 1. You need an AWS Account - https://aws.amazon.com/
@@ -18,13 +18,10 @@ Generating a static site using the Astro Javascript framework and deploying it t
     ``` npm install astro ``` 
 
 ### Creating an Astro Project
-Before you get started, you may want to look at some of the nice themes available at https://astro.build/themes/ because it's really simple to install a theme when you first create your project like this:
- 
-``` npm create astro@latest -- --template satnaing/astro-paper``` 
+
 
 * Create an Astro project:
     1. ```npm create astro@latest```
-        * If you wanted to install a theme at creation time, do it here.
     2. Follow the quick prompt to finish installation. Enter a directory name or accept default of a random name and choose if you want TypeScript or JS. These are your personal preference and won't matter for the rest of this guide.
     3. cd into your folder and ```npm run dev``` to launch your project at default http://127.0.0.1:3000
     4. If you see a blog, you're ready to move on to the next step...

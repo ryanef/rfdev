@@ -7,7 +7,7 @@ pubDatetime: 2022-09-21T05:17:19Z
 
 In 2015 before I knew anything at all about cloud, I was looking for a cheap way to host a Wordpress blog when I found an article that mentioned using AWS free tier services to accomplish that. I followed a tutorial on spinning up an EC2 server and Route53 to get Wordpress running in the cloud. It worked, but like many other big ideas I had at the time, the site was quickly forgotten about and for the time being that was the end of my experience with AWS.
 
-In 2020, I was long overdue for a much needed career change and after doing some research I decided to take a shot at the AWS Solutions Architect exam. It was around September I began studying but stumbled a few times and wouldn’t study for a few weeks due to work or one of life’s random problems. Eventually I decided the best thing for me to stay on track would be to put my money on the line and register for the exam. In early 2021 I booked my first exam, the SAA-C02, for April 2021. I passed the SAA-C02 and went on to pass the Developer and SysOps Administrator Associate exams within the next year.
+In 2021 I decided to move in a direction career direction and after talking to a co-worker who's a cloud engineer I became very interested in that. I booked my first exam, the SAA-C02, for April 2021. I passed the SAA-C02 and went on to pass the Developer and SysOps Administrator Associate exams within the next year.
 
 ### Resources Used:
 I used mostly the three sources below for all 3 AWS Associate certifications. Of course the official AWS documentation is a gold mine but all 3 resources below will provide you plenty of links to the relevant docs for the certification you’re taking.
@@ -37,7 +37,7 @@ There are several reasons I start the practice exams roughly 2 weeks away from t
 
 The other reason is the exams are very realistic and difficult which can be mentally taxing. A lot of people, including myself, let a failed practice exam get them in a negative mental state. If you don’t believe me, just search r/AWSCertifications for “is jon bonso’s practice exam harder than the real thing?” So for me, it just wasn’t a good idea to do these practice exams on back to back days.
 
-The practice exams will be hard but don’t be discouraged if you fail a few of them. I failed a couple practice exams for SAA-C02 and nearly cancelled the exam. Thankfully someone(thank you) talked me into going through with it and I passed on first attempt. It’s not that Jon’s tests are so much harder than the real thing but they are a crucial part of the learning process. The practice exam reviews are as important as the courses you watch. That’s why I try to start taking them 2 weeks before the real exam and I alternate days something like this:
+The practice exams will be hard but don’t be discouraged if you fail a few of them. I failed a couple practice exams for SAA-C02 and nearly cancelled the exam.  It’s not that Jon’s tests are so much harder than the real thing but they are a crucial part of the learning process. The practice exam reviews are as important as the courses you watch. That’s why I try to start taking them 2 weeks before the real exam and I alternate days something like this:
 
 Monday: practice exam + review the exam - read explanations for EVERYTHING
 Tuesday: go over notes and review Adrian or Stephane’s courses.

@@ -6,7 +6,7 @@ export const SITE = {
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "ryanf.dev",
   ogImage: "astropaper-og.jpg",
-  lightAndDarkMode: true,
+  lightAndDarkMode: false,
   postPerPage: 3,
 };
 
@@ -40,13 +40,13 @@ export const SOCIALS: SocialObjects = [
     name: "Mail",
     href: "mailto:ryanef39@gmail.com",
     linkTitle: `Send an email to ${SITE.title}`,
-    active: false,
+    active: true,
   },
   {
     name: "Twitter",
     href: "https://twitter.com/ryanf_dev",
     linkTitle: `${SITE.title} on Twitter`,
-    active: false,
+    active: true,
   },
   {
     name: "Twitch",
