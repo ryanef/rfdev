@@ -6,7 +6,7 @@ export const SITE = {
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "ryanf.dev",
   ogImage: "astropaper-og.jpg",
-  lightAndDarkMode: false,
+  lightAndDarkMode: true,
   postPerPage: 3,
 };
 
