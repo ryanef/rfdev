@@ -24,7 +24,7 @@ In a folder of your choice, do the following in the command line:
 
 * 
     1. ```npm create astro@latest```
-    2. Follow the prompt to finish installation. Choose a directory name and choose to initialize a Git repo, this will be used later.TypeScript or JavaScript - these are your personal preference and won't matter for the rest of this guide.
+    2. Follow the prompt to finish installation. Choose a directory name and **choose yes to initialize a Git repo**, this will be used later.TypeScript or JavaScript - these are your personal preference and won't matter for the rest of this guide.
     3. ```cd``` into your folder and type: ```npm run dev``` to launch your project. It will be accessible from your browser at default http://127.0.0.1:3000
     4. If you see a blog, you're ready to move on to the next step...
 
@@ -89,13 +89,13 @@ First we need to create an IAM User and policy for GitHub Actions.
 
 
   * **Create a User** while still in IAM:
-    1. Click ```Users``` on the left panel > click ```Add Users```
+    1. Click **Users** on the left panel > click **Add Users**
     2. Enter a name you can remember and identify 
-    3. Choose "Attach policies directly" and and search for the policy you just made above
+    3. Choose **"Attach policies directly"** and and search for the policy you just made above
         ![Output](/aws-user-policies.png)
     4. Once your user is created, you should see it in the list of users. Click on it.
-    5. Inside your user, click the ```Security Credentials``` tab
-    6. Click ```Create Access Key```
+    5. Inside your user, click the **Security Credentials** tab
+    6. Click **Create Access Key**
     7. Choose Command Line Interface(CLI) and go to Next
     8. Save your Access Key and Secret Access Key for later. Keep them safe as they allow access to your account. You'll not be able to retrieve them later. If you lose them, you'll have to generate new ones.
 
@@ -115,9 +115,9 @@ First we need to create an IAM User and policy for GitHub Actions.
     We're done in the GitHub Account for now, so back in the code editor and terminal:
 
     * **Make a GitHub Actions Workflow file**:
-        1. In the root of your Astro project folder, make a folder: ```.github``` (include the . at the beginning)
-        2. Inside of .github, make another folder called ```workflows```
-        3. Inside workflows, create a file named ```deploy.yml```
+        1. In the root of your Astro project folder, make a folder: **.github** (include the . at the beginning)
+        2. Inside of .github, make another folder called **workflows**
+        3. Inside workflows, create a file named **deploy.yml**
         4. Inside deploy.yml, enter the following code:
             ```
             name: Deploy Website
@@ -152,10 +152,11 @@ First we need to create an IAM User and policy for GitHub Actions.
 
         ## Almost done!
         
-        Now all that's left to do is push your project to Git:
+        Now push your project to Git. From the root of your Astro project enter the following:
         ```
         git add .
         git commit -m "First push"
         git push origin main
         ```
 
+        Back in your GitHub account, if you go to your repo, then click **Actions** at the top, you'll see the workflow is running and pushing the files to your S3 Bucket. Now when you go to your CloudFront URL, you'll see the Astro site. 
