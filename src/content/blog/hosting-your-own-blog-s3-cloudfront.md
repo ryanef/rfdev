@@ -60,7 +60,7 @@ Also, take note of the other values CloudFrontDistributionARN and S3Bucket, we'l
 ## Continuous Deployment with GitHub Actions
 First we need to create an IAM User and policy for GitHub Actions. 
 
-* **From your AWS account, search: IAM**
+* **From your AWS console, search: IAM**
     1. Click **Policies** on the left side >> **Create Policy** >> click **JSON** tab
     2. Paste the following statement, but replace **<DISTRIBUTION_ARN>** and both **<BUCKET_NAME>** with the values you can see on your CloudFormation stack output. You can also go to CloudFront and S3 and find the values yourself. Of course remove the < > around DISTRIBUTION_ARN and BUCKET_NAME
 
@@ -97,7 +97,7 @@ First we need to create an IAM User and policy for GitHub Actions.
     5. Inside your user, click the **Security Credentials** tab
     6. Click **Create Access Key**
     7. Choose Command Line Interface(CLI) and go to Next
-    8. Save your Access Key and Secret Access Key for later. Keep them safe as they allow access to your account. You'll not be able to retrieve them later. If you lose them, you'll have to generate new ones.
+    8. Save your Access Key and Secret Access Key for later. **Keep them safe as they allow access to your account**. You'll not be able to retrieve them later. If you lose them, it's not a huge deal but you'll have to generate new ones.
 
 
 
@@ -105,7 +105,7 @@ First we need to create an IAM User and policy for GitHub Actions.
     * **From your GitHub Account**:
     1. Make a new repository, name it whatever you want and at the next screen you'll see:
         ![Output](/git.png)
-    2. In the root of your Astro project, in the terminal copy and paste the line that looks like ```git remote add origin git@github.com:YourAccountName/repoName.git```
+    2. From the root of your Astro project, in the terminal copy and paste the line that looks like ```git remote add origin git@github.com:YourAccountName/repoName.git```
     3. After you've added the origin, back in your GitHub account, click **Settings** that I've circled near the top of the screenshot above
     4. Go to **Secrets and Variables** >> **Actions** on the left menu
     5. You need to make four different repository secrets, name them like this:
@@ -213,4 +213,11 @@ First we need to create an IAM User and policy for GitHub Actions.
             9. Set **Route traffic to**: Alias to CloudFront Distribution
             10. You may have to manually enter your CloudFront distribution URL in the menu if the drop down menu doesn't automatically find it. That seems to be a small bug.
             ![Output](/route53.png)
+
+
+            ### All done!
+
+            You now have a website that is hosted on S3 and served by CloudFront with a continuous deployment setup through GitHub Actions. So every time you write a new blog or make edits to your website, simply push the changes to your Git repo's main branch then GitHub Actions will handle the rest for you. 
+
+            Hosting a website in this way provides amazing speed at a very low cost. As always, refer to how pricing works with S3, CloudFront and Route 53 to know what your spend will be and **setup billing alarms** so you're never caught by surprise.
 
